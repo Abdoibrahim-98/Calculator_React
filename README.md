@@ -1,14 +1,18 @@
 # CALCULATOR
-The Light-mode design:
-![LIGHT](https://github.com/Abdoibrahim-98/Challenges/assets/109592393/071d7c71-3abc-477a-8565-b06e5dd5de4d)
+-The Light-mode design:
+![LIGHT](https://github.com/Abdoibrahim-98/Challenges/assets/109592393/75686bd2-972c-489f-a5d3-90a3d1164c2e)
 
 
 
-The Dark-mode design:
-![DARK](https://github.com/Abdoibrahim-98/Challenges/assets/109592393/8c12d44b-cd1f-4a0c-8c44-a701dc0df8a2)
+
+
+-The Dark-mode design:
+![DARK](https://github.com/Abdoibrahim-98/Challenges/assets/109592393/7f326b1d-46aa-40d4-a233-943e901bc648)
 
 
 
-Testing the project:
+
+
+-Testing the project:
 https://github.com/Abdoibrahim-98/Challenges/assets/109592393/7c71744f-ab9c-4cc9-bba4-0b96ef10757c
 
