@@ -64,7 +64,7 @@ function Main() {
             }catch(error){
                 setResult('error')
             }
-            const text = `${input} = ${eval(input)}`;
+            const text = `${input.replace(/\//g, '÷').replace(/\*/g, 'x')} = ${eval(input)}`;
             addToHistory(text);
         }else if(value === 'negative'){
             setResult(-1 * result);
@@ -103,7 +103,7 @@ function Main() {
                 <div className="lower-section">
                     <label>=</label>
                     <div className="operation">
-                        {input}
+                        {input.replace(/\//g, '÷').replace(/\*/g, 'x')}
                         
                     </div>
                     <div className="result">

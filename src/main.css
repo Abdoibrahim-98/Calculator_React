@@ -7,15 +7,15 @@
 }
 
 [data-theme="dark"] {
-  --main-background : black;
+  --main-background : linear-gradient(to bottom right,#353535, #17191C );
   --font-color : white;
-  --keyboard-color: linear-gradient(to left, #102B43, #123C5D);
+  --keyboard-color: linear-gradient(to left, #184D68, #123C5D);
   --btns-background: rgba(0, 0, 0, 0.4);
   --equal-background-color: #04121b;
 }
 
 .main{
-    background-color: var(--main-background);
+    background: var(--main-background);
     height: 586px;
     width: 277.6px;
     border-radius: 20px;
@@ -35,8 +35,9 @@
 }
 
 .keyboard{
-    height: 60%;
+    height: 60.1%;
     width: 100%;
+    box-sizing: border-box;
     border-radius: 20px;
     background: var(--keyboard-color);
     display: flex;
@@ -49,14 +50,14 @@
 }
 
 .rigt-section{
-  height: 86%;
-  width: 18%;
+  height: 85%;
+  width: 16%;
   background-color: var(--btns-background);
   border-radius: 35px;
-  margin: 5% 5% 10% 2.5%;
+  margin: 7% 7% 7% 0%;
   display: flex;
   flex-direction: column;
-  gap: 4%;
+  gap: 6%;
   transition: 0.3s;
 }
 
@@ -68,9 +69,9 @@
 
 
 .left-upper{
-  height: 15%;
+  height: 12%;
   width: 82%;
-  margin: 5%;
+  margin: 10% 5% 5% 10%;
   margin-left: 10%;
   background-color: var(--btns-background);
   border-radius: 35px;
@@ -80,22 +81,26 @@
   justify-content: center;
   gap: 15px;
   transition: 0.3s;
+  box-sizing: border-box;
 }
 
 .left-lower{
   height: 70%;
   width: 100%;
+  box-sizing: border-box;
+  /* padding: 13% 0 13% 0; */
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 12px;
+  /* margin-top: -5%; */
 }
 
 .btns{
   flex: 0 calc(24.33% - 7px); /* Three buttons per row with 7px gap */
-  height: 20%;
+  height: 18%;
   border: none;
   border-radius: 50%;
   background-color: var(--btns-background);
@@ -113,7 +118,7 @@
 }
 
 .left-upper-btns{
-  height: 70%;
+  height: 81%;
   margin: 0 !important;
   background-color: transparent;
 }
@@ -147,22 +152,22 @@
   left: 37%;
   top: 5%;
   display: block;
-  background-color: white;
+  background-color: #A9DCFD;
   border-radius: 20px;
-  box-shadow: inset 0 5px 15px rgba(0,0,0,0.4), inset 0 -5px 15px rgba(255, 255, 255, 0.4);
+  /* box-shadow: inset 0 5px 15px rgba(0,0,0,0.4), inset 0 -5px 15px rgba(255, 255, 255, 0.4); */
   cursor: pointer;
   transition: 0.3s;
 }
 
 .change-mode:after{
   content: "";
-  height: 95%;
-  width: 40%;
+  height: 100%;
+  width: 56%;
   position: absolute;
-  left: 2%;
-  background: linear-gradient(180deg, #ffcc89, #d8860b);
-  border-radius: 50%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  left: 0.1%;
+  background-color: #D8EEFF ;
+  border-radius: 20px;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
   transition: 0.3s;
 }
 
@@ -173,13 +178,13 @@
 }
 
 .upper-section input:checked + label{
-  background: #242424;
+  background: #1B6A9C;
 }
 
 .upper-section input:checked + label:after{
-  left: 98%;
+  left: 100%;
   transform: translateX(-100%);
-  background: linear-gradient(180deg, #777, #3a3a3a);
+  background: #003661;
 }
 
 .change-mode:active::after{
@@ -194,21 +199,21 @@
 }
 
 .sun{
-  left: 5%;
-  stroke: rgb(0, 0, 0) ;
+  left: 10%;
+  stroke: #5E6568 ;
 
 }
 
 .moon{
-  left: 62%;
-  stroke: #0f0f0f;
+  left: 58%;
+  stroke: #5E6568;
   transition: 0.3s;
 }
 
 
 
 .upper-section input:checked + label svg.sun{
-  stroke: rgb(245, 241, 25);
+  stroke: #ffffff88;
 }
 
 .upper-section input:checked + label svg.moon{
@@ -234,7 +239,7 @@
   box-sizing: border-box;
   overflow-y:scroll;
   text-align: center ;
-  
+  letter-spacing: 1px;
 }
 
 .hide{
@@ -272,6 +277,8 @@
   box-sizing: border-box;
   height: 35%;
   text-align: right;
+  color: #8D8E8F;
+  letter-spacing: 1px;
 }
 
 .result{
